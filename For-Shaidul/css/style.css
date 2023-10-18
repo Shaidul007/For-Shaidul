@@ -1,0 +1,621 @@
+/*
+* Template Name: Happy Time - Video Gallery HTML Website Template
+* Author:  Themes_Heaven
+* Author URL:
+* Version: 1.0
+*/
+
+/* =============================================================================
+
+[Table of contents]
+
+0.0 Common CSS START 
+1.0 MENU AREA START 
+2.0 BANNER AREA START
+3.0 ABOUT AREA START
+4.0 GALLERY AREA START
+5.0 BLOG AREA START 
+6.0 CONTACT AREA START
+7.0 FOOTER AREA START
+
+ 
+/*===========================
+0.0 *** Common CSS START ***
+=============================*/
+body {
+    overflow-x: hidden !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+#dark-mode {
+    background: #121212;
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+}
+
+/* #dark-mode::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape3.png);
+    z-index: -99;
+    opacity: 40%;
+} */
+
+:root {
+    --ff: 'Cantarell', sans-serif;
+    --brand: #eb5e24;
+    --clr1: #787878;
+    --clr2: #444444;
+    --clr: #e0e0e0;
+}
+
+/* common css end */
+
+.common-heading h4 {
+    color: var(--brand);
+    /* font-weight: 200; */
+    font-size: 60px;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.common-heading .cntct,
+.common-heading h4 {
+    position: relative;
+}
+
+.common-heading .cntct::after,
+.common-heading h4::after {
+    position: absolute;
+    content: "";
+    width: 13%;
+    height: 6px;
+    left: 43%;
+    bottom: 60%;
+    transform: translate(-50%, -50%);
+    /* background: #e8d0d0; */
+    /* opacity: 1;
+	z-index: -1;
+	transform: skewX(70deg);
+	background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #e67b00); */
+}
+
+.common-heading .cntct::after {
+    width: 15%;
+}
+
+/*1. ***************************************
+            menu part start
+   ***************************************/
+
+body {
+    position: relative;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../images/bg_shape.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    z-index: -1;
+    opacity: .3;
+}
+
+.main-menu {
+    /*! height: 200px; */
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    background: #000;
+    z-index: 9999999;
+}
+
+.main-menu ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ff);
+    margin: 0 10px;
+    transition: all linear .3s;
+    position: relative;
+}
+
+.main-menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 37px;
+    opacity: 0;
+    /* background-image: url(../images/link-bg.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.main-menu ul li a:hover::after {
+    opacity: 1;
+}
+
+.main-menu .navbar-brand {
+    color: white;
+    font-weight: 700;
+    font-family: var(--ff);
+    font-size: 30px;
+    transition: all linear .3s;
+}
+
+.main-menu .navbar-brand span {
+    color: var(--brand);
+}
+
+.main-menu .navbar-brand:hover {
+    color: var(--brand);
+}
+
+.main-menu ul li a:hover {
+    color: var(--brand);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: var(--brand);
+}
+
+.menu_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
+    margin-top: 0;
+    background-color: #000;
+}
+
+/* ***************************************
+            menu part end
+   ***************************************/
+
+
+/*2. ***************************************
+            banner part start
+   ***************************************/
+
+/* ***************************************
+            banner part end
+   ***************************************/
+
+
+
+/*4. ***************************************
+            gallery part start
+   ***************************************/
+#Video-gallery {
+    padding: 200px 0px 50px 0px;
+}
+
+.video-img {
+    position: relative;
+    transition: all linear .3s;
+    overflow: hidden;
+}
+.video-img img{
+    transition: all linear .2s;
+}
+.video-img:hover img {
+    transform: scale(1.1);
+}
+
+.overly-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+    transition: all linear .5s;
+}
+
+.video-img:hover .overly-content {
+    display: block;
+}
+
+.overly-content h5 {
+    color: var(--clr);
+    font-weight: 500;
+    font-size: 24px;
+    transition: all linear .3s;
+}
+
+.overly-content h4 {
+    color: var(--brand);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.overly-content h6 {
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 20px;
+}
+.section-margin{
+    margin-top: 24px;
+}
+/* ***************************************
+            gallery part end
+   ***************************************/
+
+
+/*6. ***************************************
+            contact part start
+   ***************************************/
+#contact {
+    padding: 200px 0;
+}
+
+.contact-form {
+    text-align: right;
+}
+
+.contact-left {
+    text-align: left;
+}
+
+.contact-left textarea {
+    height: 183px;
+    width: 460px;
+}
+
+.contact-form form input {
+    width: 460px;
+}
+
+.contact-left textarea,
+.contact-form form input {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+    background: transparent;
+    color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--ff);
+    border: 0;
+    border: 1px solid var(--brand);
+    border-radius: 5px;
+}
+
+.contact-head {
+    padding-bottom: 40px;
+}
+
+.contact-head h3 {
+    padding-bottom: 20px;
+    color: var(--brand);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ff);
+    text-transform: uppercase;
+}
+
+.contact-head p {
+    padding-bottom: 30px;
+    width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--ff);
+    text-transform: uppercase;
+}
+
+.sumbit-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: transparent;
+    border: 0;
+    border: 1px solid var(--brand);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: all linear .3s;
+}
+
+.sumbit-btn:hover {
+    background: var(--brand);
+}
+
+.contact-info {
+    margin-top: 50px;
+}
+
+.contact_address {
+    padding-top: 20px;
+}
+
+.contact_me i {
+    color: var(--brand);
+    font-size: 40px;
+}
+
+.contact_me p {
+    color: var(--clr1);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--ff1);
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+
+.map iframe {
+    border-radius: 5px;
+}
+
+.red-text {
+    color: rgb(0, 0, 0);
+}
+
+.contact_me a {
+    color: var(--clr1);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--ff);
+    padding-top: 7px;
+}
+
+.contact_me h5 {
+    color: var(--clr1);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--ff);
+    padding-top: 7px;
+    text-transform: capitalize;
+}
+
+/* ***************************************
+            contact part end
+   ***************************************/
+
+
+/*7. ***************************************
+            footer part start
+   ***************************************/
+.footer-top {
+    padding: 0px 0;
+}
+
+.vbox-content iframe {
+    margin-top: 125px !important;
+}
+
+.social-media-icon a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 0px 0px 12px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: var(--brand);
+    text-align: center;
+    border-radius: 20px;
+    transition: all linear .3s;
+}
+
+.social-media-icon a:hover {
+    border: 0px solid var(--brand);
+    background-color: transparent;
+    color: var(--brand);
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.copy-right {
+    padding: 10px 0px 50px 0px;
+    color: var(--clr1);
+    font-weight: 400;
+    font-size: 18px;
+    font-family: var(--ff);
+}
+
+.copy-right p a {
+    color: var(--brand);
+}
+
+/* ***************************************
+            footer part end
+   ***************************************/
+
+/*08***************************************
+            recht part start
+   ***************************************/
+#impressum,
+#recht {
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+
+.bg-clr {
+    background: #1e1d1d;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.content-inner h4,
+.blog-part1 h4 {
+    color: var(--brand);
+    font-weight: 700;
+}
+
+.blog-part1 h6 {
+    color: #f1f1f1;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 24px;
+}
+
+.content-inner p,
+.first-pera p {
+    color: var(--clr);
+    font-weight: 400;
+    line-height: 28px;
+    padding-bottom: 40px;
+}
+
+.first-pera span a,
+.first-pera span {
+    color: var(--brand);
+}
+
+.right-side a,
+.right-side {
+    color: var(--brand);
+}
+
+.right-side a {
+    padding-left: 10px;
+}
+
+.colorss {
+    color: var(--brand) !important;
+}
+
+/* ***************************************
+            recht part end
+   ***************************************/
+
+/* 09***************************************
+            impressum part end
+   ***************************************/
+.content-inner h4 {
+    padding-bottom: 30px;
+}
+
+.content-inner p {
+    font-size: 17px;
+}
+
+.list {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.content-end p {
+    color: var(--clr);
+}
+
+.list li {
+    padding-bottom: 10px;
+    color: var(--clr);
+}
+
+.cl1,
+.list li .cl1 {
+    color: #818487;
+    font-weight: 700;
+}
+
+.cl2,
+.list li .cl2 {
+    color: var(--clr);
+    font-weight: 700;
+}
+
+.cl3,
+.list li .cl3 {
+    color: #e75d2e;
+    font-weight: 700;
+}
+
+.list li a {
+    color: var(--clr);
+}
+
+.list li a:hover,
+.list li:hover {
+    color: var(--brand);
+}
+
+.list1 {
+    margin-top: 24px;
+}
+
+.list1 li {
+    color: var(--clr);
+    padding-bottom: 10px;
+}
+
+.last-content {
+    color: var(--clr);
+}
+
+.mb p {
+    margin-bottom: 30px;
+}
+
+/* ***************************************
+            impressum part end
+   ***************************************/

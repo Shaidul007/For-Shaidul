@@ -1,0 +1,198 @@
+@media (min-width: 1400px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .about-text-p p {
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        padding-top: 2px;
+    }
+
+    .about-text {
+        padding-top: 2px;
+    }
+
+    .about-last-txt,
+    .about-mid p {
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .common-heading h4::after {
+        width: 19%;
+        left: 40%;
+    }
+
+    .common-heading .cntct::after {
+        width: 24%;
+        left: 37%;
+    }
+
+    .v-img-height img {
+        height: 348px;
+    }
+
+    .contact-head p {
+        width: auto;
+    }
+
+    .map iframe {
+        width: 440px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .overly-content h4 {
+        font-size: 23px;
+    }
+    .overly-content h5 {
+        font-size: 20px;
+    }
+    .overly-content h6 {
+        font-size: 17px;
+    }
+    .contact-head p {
+        width: auto;
+    }
+
+    .common-heading .cntct::after {
+        width: 33%;
+        left: 32%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* *********************************
+            menu part start
+    **********************************/
+    .main-menu {
+        background: rgba(18, 18, 18, 0.9);
+        top: 0;
+    }
+
+    .main-menu ul {
+        background: rgba(18, 18, 18, 0.9);
+        text-align: center;
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 7px;
+        /* border-radius: 35px 0 35px; */
+    }
+
+    .main-menu .navbar-toggler i {
+        color: #fff;
+    }
+
+    .main-menu .navbar-toggler:focus {
+        box-shadow: 0 0 0 0;
+    }
+    .v-mgn{
+        margin-top: 24px;
+    }
+    .common-heading .cntct::after,
+    .common-heading h4::after {
+        width: 22%;
+    }
+
+    .common-heading .cntct::after,
+    .common-heading h4::after {
+        width: 36%;
+        left: 153px;
+    }
+
+    .common-heading .cnt-gal::after {
+        width: 40%;
+        left: 153px;
+    }
+
+    #contact {
+        padding: 150px 0 60px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    /* *********************************
+            menu part start
+    **********************************/
+    .main-menu {
+        background: #000;
+        top: 0;
+    }
+.main-logo {
+    display: block;
+}
+    .main-menu ul {
+        background: rgba(18, 18, 18, 0.9);
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+
+    .video-img img {
+        height: 350px;
+    }
+
+    .video-img .overly h4 {
+        font-size: 20px;
+    }
+
+    .main-menu .navbar-toggler i {
+        color: #fff;
+    }
+
+    .main-menu .navbar-toggler:focus {
+        box-shadow: 0 0 0 0;
+    }
+
+    .footer-top .social-icon a {
+        font-size: 14px;
+        margin: 0 3px;
+        height: 28px;
+        width: 28px;
+        line-height: 28px;
+    }
+
+    .copy-right {
+        font-size: 16px;
+    }
+
+    .contact-head p {
+        padding-bottom: 30px;
+        width: auto;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    #contact {
+        padding: 150px 0 50px;
+    }
+
+   
+    .v-mgn{
+        margin-top: 24px;
+    }
+
+    .main-menu {
+        /* height: 118px; */
+        padding: 10px 0;
+    }
+    .main-logo,
+    .social-media-icon{
+        margin: 0 auto;
+    }
+    .venoframe.vbvid {
+        height: 214px !important;
+        width: 77% !important;
+        margin-right: 115px !important;
+    }
+}
