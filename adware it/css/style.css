@@ -2345,6 +2345,9 @@ body.rounded-btns .read-more {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+.services-boxed .service-title span{
+  text-transform: none !important;
+}
 .services-boxed .service-text {
   font-size: 1.1rem;
   line-height: 1.5;
@@ -2997,6 +3000,7 @@ body.rounded-btns .read-more {
   margin-bottom: 2rem;
   text-align: center;
   transition: all 0.5s ease-in-out 0s;
+  height: 400px;
 }
 .our-team .tm-member-card:hover .tm-image > img {
   transform: scale(1.05);
@@ -3024,8 +3028,9 @@ body.rounded-btns .read-more {
   transition: all 0.5s ease-in-out 0s;
 }
 .our-team .tm-member-card .tm-image img {
-  width: 100%;
-  transition: all 0.5s ease-in-out 0s;
+	width: 100%;
+	transition: all 0.5s ease-in-out 0s;
+	border-radius: 50%;
 }
 .our-team .tm-member-card .tm-image .tm-social {
   position: absolute;
@@ -3180,11 +3185,11 @@ body.rounded-btns .read-more {
 .our-clients .logo {
   max-height: 125px;
   border-radius: 0.25rem;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
 }
-.our-clients .logo:hover {
+/* .our-clients .logo:hover {
   filter: grayscale(0);
-}
+} */
 .our-clients-blocks {
   background: var(--clr-semi-dark-blue);
 }
@@ -4017,7 +4022,6 @@ body.rounded-btns .read-more {
 	margin: 1rem 0;
 	border-radius: 0.25rem;
 	background-color: rgba(var(--clr-main-rgb), 0.15);
-	overflow-y: scroll;
 	height: 450px;
 }
 .blog .posts-grid .post-box:hover .post-img-wrapper .overlay-color {
@@ -5108,3 +5112,17 @@ transition: 1s;
   margin-top: 40px;
 }
 /*    End dark theme rules  */ 
+#terms{
+  padding: 80px 0;
+}
+
+.terms-list li{
+  padding-bottom: 20px;
+}
+.terms-list li span{
+  color: #00c3a5;
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  list-style: none;
+}
